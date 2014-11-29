@@ -40,7 +40,7 @@ var largestCoef = exports.largestCoef = function(array) {
 };
 
 var findYear = exports.findYear = function(births) {
-	for (var i; i < births.length; i++) {
+	for (var i = 0; i < births.length; i++) {
 		calculateCoef(births[i]);
 	}
 	
