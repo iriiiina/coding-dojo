@@ -53,7 +53,7 @@ var findWorst = exports.findWorst = function(soccers) {
 
 var findWorstClub = exports.findWorstClub = function(soccers) {
 	
-	for (var i; i < soccers.length; i++) {
+	for (var i = 0; i < soccers.length; i++) {
 		calculateDifference(soccers[i]);
 	}
 	
