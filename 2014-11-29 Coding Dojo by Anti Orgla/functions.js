@@ -2,7 +2,7 @@ var fs = require('fs');
 
 var lines = exports.lines = function(file) {
 	
-	return fs.readFileSync(file).toString().split(/\r?\n/);
+	return fs.readFileSync(file).toString().split(/\r?\n/).slice(1);
 	
 };
 
